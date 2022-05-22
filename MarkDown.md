@@ -319,10 +319,6 @@ Underscores
     - 엔터를 한 번 더 쳐서 한줄을 통으로 비워주거나
 - `<br/>` 태그를 써도 줄바꿈 된다.
 
-> 참고자료
-> 
-> 
+> 참고자료   
 > heropy님 블로그 [https://heropy.blog/2017/09/30/markdown/](https://heropy.blog/2017/09/30/markdown/)
-> 
 > ihoneymon님 깃헙 [https://gist.github.com/ihoneymon/652be052a0727ad59601](https://gist.github.com/ihoneymon/652be052a0727ad59601)
->
