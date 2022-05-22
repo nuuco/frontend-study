@@ -319,6 +319,19 @@ Underscores
     - 엔터를 한 번 더 쳐서 한줄을 통으로 비워주거나
 - `<br/>` 태그를 써도 줄바꿈 된다.
 
+## 📌 체크박스(Checkbox)
+- 대괄호 `[]`를 써주면 된다.
+- 안을 체크하고 싶을 땐 `[x]` 이렇게 x를 넣어준다.
+
+```markdown
+[ ] 체크박스
+[x] 표시된 체크박스
+```
+[ ] 체크박스   
+[x] 표시된 체크박스
+
+<br/>
+
 > 참고자료   
 > heropy님 블로그 [https://heropy.blog/2017/09/30/markdown/](https://heropy.blog/2017/09/30/markdown/)
 > ihoneymon님 깃헙 [https://gist.github.com/ihoneymon/652be052a0727ad59601](https://gist.github.com/ihoneymon/652be052a0727ad59601)
