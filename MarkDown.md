@@ -254,14 +254,14 @@ __double underscores__   //강조
     
     → 코드 종류까지 적어주면 좋다.
     
-    ```markdown
+```markdown
     ```javascript
     function func() {
-      var a = 'AAA';
-      return a;
+    var a = 'AAA';
+    return a;
     }
     ```
-    ```
+```
     
 
 ## 📌 표(Table)
