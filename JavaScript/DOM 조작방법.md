@@ -4,7 +4,7 @@
 
 ### 🧩 CREATE
 
-- document.createElement(’div’)
+- **document.createElement(’div’)**
     
     : 엘리먼트를 만든다. 다만 생성만 하면 노드가 아무데도 연결되지 않아, HTML에 나타나지 않는다.
     
@@ -18,7 +18,7 @@
     ```
     
 
-- document.importNode(externalNode, deep)
+- **document.importNode(externalNode, deep)**
     
     : 현재 문서가 아닌 외부 문서의 노드를 복사하여 현재 문서에 넣을 수 있도록 해준다.
     
@@ -44,7 +44,7 @@
     ```
     
 
-- node.cloneNode(deep)
+- **node.cloneNode(deep)**
     
     : 이 메서드를 호출한 Node 의 복제된 Node를 반환한다.
     
@@ -78,9 +78,8 @@
 > (문서에 존재하는 노드를 다른 곳으로 붙이기 전에 부모 노드로 부터 지워버릴 필요는 없다.   
 > ⇒ 한 노드가 문서상의 두 지점에 동시에 존재할 수 없기 때문…!
 
-</aside>
 
-- node.insertBefore(삽입할 노드, 기준점 노드)
+- **node.insertBefore(삽입할 노드, 기준점 노드)**
     
     : 부모 노드 안의 기준점이 되는 자식 노드 앞에 자식 노드를 삽입
     
@@ -106,7 +105,7 @@
     ```
     
 
-- element.append(노드)
+- **element.append(노드)**
     
     : element에 마지막 자식 요소로 노드를 추가한다.
     
@@ -119,7 +118,7 @@
     → `undefined` 만 반환한다. 반환하는 값 없음.
     
 
-- node.appendChild(노드)
+- **node.appendChild(노드)**
     
     : node의 마지막 자식 요소로 노드를 추가한다.
     
@@ -162,7 +161,7 @@
 
 ⚠️ querySelector는 IE 9이상 사용가능
 
-- document.querySelector('.className li');
+- **document.querySelector('.className li');**
     
     : 선택자와 일치하는 문서 내 첫 번째 element를 반환
     
@@ -179,40 +178,40 @@
     ```
     
 
-- document.querySelectorAll('li');
+- **document.querySelectorAll('li');**
     
     : 선택자와 일치하는 모든 element를 NodeList 로 반환 
     
     → NodeList 라는 유사 배열 객체(Array-like Object)로 받아온다. (for문 사용 가능)
     
 
-- document.getElementById('idName')
+- **document.getElementById('idName')**
     
     : id 값으로 HTML 엘레먼트를 가져온다.
     
 
-- document.getElementsByClassName('className');
+- **document.getElementsByClassName('className')**
     
     : class 네임으로 엘레먼트들을 가져온다. (그래서 Elements)
     
     → NodeList 라는 유사 배열 객체(Array-like Object)로 받아온다. (for문 사용 가능)
     
 
-```javascript
-const idElement = document.getElementById('idName');
-const classElement = document.getElementsByClassName('className');
-****//클래스 네임으로 가져오면 html 콜렉션으로 가져온다. 그래서 element's' 임.
-//이렇게 가져온 것은 배열이 아님. NodeList = 유사 배열 객체
-//Array.from() 으로 배열로 바꿀 수 있음.
+    ```javascript
+    const idElement = document.getElementById('idName');
+    const classElement = document.getElementsByClassName('className');
+    //클래스 네임으로 가져오면 html 콜렉션으로 가져온다. 그래서 element's' 임.
+    //이렇게 가져온 것은 배열이 아님. NodeList = 유사 배열 객체
+    //Array.from() 으로 배열로 바꿀 수 있음.
 
-//비교적 최신 querySelector, querySelectorAll
-//가장 편리! 유용! IE 9이상 사용가능
-//CSS 선택자를 조합하여 편하게 가져올 수 있음.
-//querySelector -> 유효한 것 하나만 가져옴(첫번째만)
-//querySelectorAll -> 해당하는 것 다. NodeList 로 가져옴
-const query = document.querySelector('.className li');
-const queryAll = document.querySelectorAll('li');
-```
+    //비교적 최신 querySelector, querySelectorAll
+    //가장 편리! 유용! IE 9이상 사용가능
+    //CSS 선택자를 조합하여 편하게 가져올 수 있음.
+    //querySelector -> 유효한 것 하나만 가져옴(첫번째만)
+    //querySelectorAll -> 해당하는 것 다. NodeList 로 가져옴
+    const query = document.querySelector('.className li');
+    const queryAll = document.querySelectorAll('li');
+    ```
 
 <br/>
 
@@ -220,7 +219,7 @@ const queryAll = document.querySelectorAll('li');
 
 **내용 바꾸기**
 
-- node.textContent
+- **node.textContent**
     
     : 요소 안에 있는 내용 반환
     
@@ -247,26 +246,26 @@ const queryAll = document.querySelectorAll('li');
 
 **클래스 추가제거**
 
-- element.classList
+- **element.classList**
     
     : 요소의 클래스 정보가 담겨있다.
     
     → 넣어줘야될 class 가 하나이면 `el.classList = 'class-name'` 이렇게 넣어줘도 된다.
     
 
-- .classList.add('클래스명')
+- **.classList.add('클래스명')**
     
     : 요소에 클래스 추가하기
     
 
-- .classList.remove('클래스명')
+- **.classList.remove('클래스명')**
     
     : 요소에 클래스 제거하기
     
 
 **다른 속성 추가제거**
 
-- element.setAttribute(’name’, ‘submit-btn’)
+- **element.setAttribute(’name’, ‘submit-btn’)**
     
     : 특정 속성의 값을 요소에 넣어줄 수 있다.
     
@@ -281,7 +280,7 @@ const queryAll = document.querySelectorAll('li');
     btn.setAttribute("disabled", "")
     ```
     
-- element.removeAttribute(’속성명’)
+- **element.removeAttribute(’속성명’)**
     
     : 특정 속성을 제거할 수 있다.
     
@@ -289,7 +288,7 @@ const queryAll = document.querySelectorAll('li');
 
 ### 🧩 DELETE
 
-- element.remove()
+- **element.remove()**
     
     : 해당 요소가 삭제된다.
     
@@ -309,7 +308,7 @@ const queryAll = document.querySelectorAll('li');
     
     ```
     
-- node.removeChild(childNode)
+- **node.removeChild(childNode)**
     
     : 자식 노드를 없앤다. 
     
